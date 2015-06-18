@@ -27,10 +27,27 @@ namespace TestInterop
             InitializeComponent();
         }
 
-        [DllImport("user32")]
+        /// <summary>
+        /// cool low level beep
+        /// </summary>
+        /// <param name="dwFreq"></param>
+        /// <param name="dwDuration"></param>
+        /// <returns></returns>
+        [DllImport("Kernel32")]
+        extern static bool Beep(short dwFreq, short dwDuration);
+
+        /// <summary>
+        /// play windows sounds
+        /// </summary>
+        /// <param name="uType"></param>
+        /// <returns></returns>
+        [DllImport("User32")]
+        extern static bool MessageBeep(uint uType);
+
+        [DllImport("User32")]
         extern static bool FlashWindow(IntPtr hWnd, bool bInvert);
 
-        [DllImport("user32")]
+        [DllImport("User32")]
         extern static bool FlashWindowEx(out FLASHWINFO pfwi);
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -39,6 +56,7 @@ namespace TestInterop
             var wih = new WindowInteropHelper(window);
             IntPtr hWnd = wih.Handle;
 
+            Beep(750, 300);
             FlashWindow(hWnd, true);
         }
 
@@ -59,6 +77,7 @@ namespace TestInterop
                 dwTimeout = 0
             };
 
+            MessageBeep(0x00000040);
             FlashWindowEx(out fi);
         }
     }
