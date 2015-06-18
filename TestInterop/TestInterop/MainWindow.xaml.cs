@@ -80,6 +80,48 @@ namespace TestInterop
             MessageBeep(0x00000040);
             FlashWindowEx(out fi);
         }
+
+        private short soubdDuration = 300;
+
+        private void C_Sound_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Beep(261, soubdDuration);
+        }
+
+        private void D_Sound_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Beep(293, soubdDuration);
+        }
+
+        private void E_Sound_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Beep(329, soubdDuration);
+        }
+
+        private void F_Sound_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Beep(349, soubdDuration);
+        }
+
+        private void G_Sound_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Beep(392, soubdDuration);
+        }
+
+        private void A_Sound_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Beep(440, soubdDuration);
+        }
+
+        private void HB_Sound_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Beep(493, soubdDuration);
+        }
+
+        private void C2_Sound_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Beep(523, soubdDuration);
+        }
     }
 
     [StructLayout(LayoutKind.Sequential)]

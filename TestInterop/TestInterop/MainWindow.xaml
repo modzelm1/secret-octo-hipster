@@ -5,6 +5,14 @@
     <Grid>
         <Button Content="Flash once" HorizontalAlignment="Left" Margin="337,113,0,0" VerticalAlignment="Top" Width="147" Click="Button_Click" Height="36"/>
         <Button Content="Flash multiple times" HorizontalAlignment="Left" Margin="337,176,0,0" VerticalAlignment="Top" Width="147" Height="36" Click="Button_Click_1"/>
+        <Button x:Name="C_Sound_Button" Content="C" HorizontalAlignment="Left" Margin="42,23,0,0" VerticalAlignment="Top" Width="32" Height="32" Click="C_Sound_Button_Click"/>
+        <Button x:Name="D_Sound_Button" Content="D" HorizontalAlignment="Left" Margin="42,60,0,0" VerticalAlignment="Top" Width="32" Height="32" Click="D_Sound_Button_Click"/>
+        <Button x:Name="E_Sound_Button" Content="E" HorizontalAlignment="Left" Margin="42,97,0,0" VerticalAlignment="Top" Width="32" Height="32" Click="E_Sound_Button_Click"/>
+        <Button x:Name="F_Sound_Button" Content="F" HorizontalAlignment="Left" Margin="42,134,0,0" VerticalAlignment="Top" Width="32" Height="32" Click="F_Sound_Button_Click"/>
+        <Button x:Name="G_Sound_Button" Content="G" HorizontalAlignment="Left" Margin="42,171,0,0" VerticalAlignment="Top" Width="32" Height="32" Click="G_Sound_Button_Click" RenderTransformOrigin="3.281,3.188"/>
+        <Button x:Name="A_Sound_Button" Content="A" HorizontalAlignment="Left" Margin="42,208,0,0" VerticalAlignment="Top" Width="32" Height="32" Click="A_Sound_Button_Click" RenderTransformOrigin="3.938,5.406"/>
+        <Button x:Name="HB_Sound_Button" Content="H/B" HorizontalAlignment="Left" Margin="42,245,0,0" VerticalAlignment="Top" Width="32" Height="32" Click="HB_Sound_Button_Click" RenderTransformOrigin="2.812,5.781"/>
+        <Button x:Name="C2_Sound_Button" Content="C2" HorizontalAlignment="Left" Margin="42,282,0,0" VerticalAlignment="Top" Width="32" Height="32" Click="C2_Sound_Button_Click" RenderTransformOrigin="2.812,5.781"/>
 
     </Grid>
 </Window>
