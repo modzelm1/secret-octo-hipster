@@ -107,4 +107,52 @@ To get window pointer (window handle) we use WindowInteropHelper which is locate
 In the second case we need FLASHWINFO struct size in bytes. 
 We can count it by ourselves (2 + 8 + 4 + 2 + 4 in my case) or we can use Marshal.SizeOf function from System.Runtime.InteropServices namespace.
 
+###Play with Beep!
+
+Let's add two new functions:
+
+famous Beep
+
+```cs
+[DllImport("Kernel32")]
+extern static bool Beep(short dwFreq, short dwDuration);
+```
+
+and MessageBeep
+
+```cs
+[DllImport("Kernel32")]
+extern static bool MessageBeep(uint uType);
+```
+MessageBeep will play windows system sounds based on the sound type parameter.
+Check documentation form all available options:
+
+https://msdn.microsoft.com/en-us/library/windows/desktop/ms680356%28v=vs.85%29.aspx
+
+In turn Beep allows you to play sound with specified length and frequency. You can use it to play simple melodies ;)
+
+What's that song?
+
+a-g-a-e-c-e-a--a-g-a-e-c-e-a ...
+
+```cs
+Beep(440, soubdDuration);
+Beep(392, soubdDuration);
+Beep(440, soubdDuration);
+Beep(329, soubdDuration);
+Beep(261, soubdDuration);
+Beep(329, soubdDuration);
+Beep(220, (short)(soubdDuration + 200));
+
+Beep(440, soubdDuration);
+Beep(392, soubdDuration);
+Beep(440, soubdDuration);
+Beep(329, soubdDuration);
+Beep(261, soubdDuration);
+Beep(329, soubdDuration);
+Beep(220, (short)(soubdDuration + 200));
+```
+
+
+
 Enjoy!
