@@ -13,6 +13,7 @@
         <Button x:Name="A_Sound_Button" Content="A" HorizontalAlignment="Left" Margin="42,208,0,0" VerticalAlignment="Top" Width="32" Height="32" Click="A_Sound_Button_Click" RenderTransformOrigin="3.938,5.406"/>
         <Button x:Name="HB_Sound_Button" Content="H/B" HorizontalAlignment="Left" Margin="42,245,0,0" VerticalAlignment="Top" Width="32" Height="32" Click="HB_Sound_Button_Click" RenderTransformOrigin="2.812,5.781"/>
         <Button x:Name="C2_Sound_Button" Content="C2" HorizontalAlignment="Left" Margin="42,282,0,0" VerticalAlignment="Top" Width="32" Height="32" Click="C2_Sound_Button_Click" RenderTransformOrigin="2.812,5.781"/>
+        <Button x:Name="play_button" Content="Play" HorizontalAlignment="Left" Margin="112,28,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-1.353,-0.364" Click="play_button_Click"/>
 
     </Grid>
 </Window>

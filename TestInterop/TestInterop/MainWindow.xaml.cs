@@ -122,6 +122,25 @@ namespace TestInterop
         {
             Beep(523, soubdDuration);
         }
+
+        private void play_button_Click(object sender, RoutedEventArgs e)
+        {
+            Beep(440, soubdDuration);
+            Beep(392, soubdDuration);
+            Beep(440, soubdDuration);
+            Beep(329, soubdDuration);
+            Beep(261, soubdDuration);
+            Beep(329, soubdDuration);
+            Beep(220, (short)(soubdDuration + 200));
+
+            Beep(440, soubdDuration);
+            Beep(392, soubdDuration);
+            Beep(440, soubdDuration);
+            Beep(329, soubdDuration);
+            Beep(261, soubdDuration);
+            Beep(329, soubdDuration);
+            Beep(220, (short)(soubdDuration + 200));
+        }
     }
 
     [StructLayout(LayoutKind.Sequential)]
